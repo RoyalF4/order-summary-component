@@ -16,7 +16,9 @@
 html {
   min-height: 100vh;
   background-image: url('/images/pattern-background-desktop.svg');
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--pale-blue);
   font-family: 'Red Hat Display';
   font-weight: 500;
   display: flex;

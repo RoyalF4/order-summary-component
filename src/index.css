@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  min-height: 100vh;
+  background-image: url('images/pattern-background-desktop.svg');
+  background-size: cover;
+  font-family: 'Red Hat Display';
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-summary {
+  width: 400px;
+  background-color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.order-summary__img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.order-summary__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2.5rem;
+}
+
+.order-summary__heading {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.order-summary__description {
+  color: var(--desaturated-blue);
+  text-align: center;
+}
+
+.order {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--Very-pale-blue);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.order__details {
+  flex: 1;
+}
+
+.details__plan {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.details__price {
+  color: var(--desaturated-blue);
+}
+
+.order__change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: var(--bright-blue);
+}
+
+.order__change:visited {
+  color: var(--bright-blue);
+}
+
+.order-summary__btn-proceed {
+  text-decoration: none;
+  color: white;
+  background-color: var(--bright-blue);
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  box-shadow: 0 0.5rem 1rem 0 var(--desaturated-blue);
+}
+
+.order-summary__btn-proceed:visited {
+  color: white;
+}
+
+.order-summary__btn-cancel {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
